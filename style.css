@@ -6,14 +6,13 @@ html {
         text-align: left;
         color: white;
         padding: 20px;
-        position:fixed;
     }
     body {
         line-height: 1.5;
         font-size: 16px;
         background-color: rgba(0,128,128,0.1);
         margin: 20px;
-                }
+    }
     
     h1 {        
         font-size: 3.5em;
@@ -21,18 +20,19 @@ html {
         display:inline;
         bottom: -25px;
         left: 180px;
-        }
+    }
     img {
-            width: 150px; 
-            border-radius: 50%;
-        }
+        width: 150px; 
+        border-radius: 50%;
+    }
     section {
-            }
+    }
     .contact li {
-            display: inline;
+        display: inline;
             text-align:left;
         }  
-    object-fit: contain; /*trying to get the image to resize automatically inside the header */
-    width: 50%; /* tried to stretch Nancy's name out using this inside h1  - didn't work */
-    position: fixed; /*tried to get the header to stay at the top of the screen - didn't work */
-    
+        object-fit: contain; /*trying to get the image to resize automatically inside the header */
+        width: 50%; /* tried to stretch Nancy's name out using this inside h1  - didn't work */
+        position: fixed; /*tried to get the header to stay at the top of the screen - didn't work */
+        position:fixed;
+        
