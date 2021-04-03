@@ -19,3 +19,20 @@ This is not only a chance for you to practice the core skills of HTML and CSS, b
 Although you will each have an individual repository in which to make the website, there is nothing stopping you pair programming with your partner on the project. Organise your time so that you can spend an equal amount of time on each project. For example, if you spend three hours coding together on Sunday, you would spend 1.5 hours pair programming on one site, before moving over to the other site.
 
 This project will span the first two weeks of the bootcamp, and you will be given time in live evening sessions to work on it as well.
+
+## My thoughts
+
+Research
+
+Looked at blogger profiles to see what kind of information was often included, general layouts.
+Considered the types of activities already undertaken in bootcamp live sessions to help us connect, questions people asked to get to know each other better.  
+Formulated a list of questions for my pair partner, including preferences around style/color.
+Zoom meeting with pair partner.
+Reassessed my thoughts on presentation and content - pair partner did not want to include basic info (eg age, current occupation, why SOC etc. 
+
+Development
+
+Started by creating a basic html page and adding standard block elements.  Linked CSS file and gradually built up some basic content, experimenting with backgrounds, colors, positions, borders.
+
+Kept reviewing code to see if it was as efficient as I could make it.
+
