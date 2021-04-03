@@ -26,6 +26,7 @@ h1 {
 h2 {
     color: rgb(16, 4, 71);
     font-size: 2.5em;
+    text-align: center;
 }
 quote {
     font: italic bold 3em;
@@ -74,6 +75,7 @@ section {
 .small-quote {
     font-size: .8em;
     font-weight: initial;
+    font-style: italic;
     }
     /*
     border-color: darkblue;
