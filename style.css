@@ -1,24 +1,21 @@
 html {
     font-family: 'Open Sans', sans-serif;
-    /* font-family: Arial, Helvetica, sans-serif; */
     color: rgb(2, 2, 56);
 }
 body {
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 14px; /* set here, use em throughout to effect global changes*/
     margin: 20px;
     background-color: rgb(201, 195, 195);
 }
-header /*footer*/ {
+header{
     border-radius: 10px;
     background-image: linear-gradient(to right, black, grey);
-    /*text-align: right;  trying to get the quote and heart image to right align*/
     color: white;
     padding: 15px 15px 0px 15px;
     margin: 20px;
-    position: sticky;  /*I cant use this with drop-shadow on the grid, it overlays it on scroll */ 
+    position: sticky;  /*I cant use this with drop-shadow on the grid-children, they overlay it on scroll */ 
     top: 0;
-    /*width:100%;  everything after header appears underneath with this applied */
     filter: drop-shadow(10px 10px 10px grey)
 }
 h1 {        
@@ -32,39 +29,33 @@ h2 {
     /*color: rgb(16, 4, 71); */
     font-size: 2.5em;
     text-align: center;
+    padding: 0px 20px 0px 20px;
 }
 p   {
     padding: 0 20px 10px 20px;
     color: black;
 }
-.img-1 {
+.headshot-img {
     width: 150px; 
     border-radius: 50%; 
     position:relative;
     /*padding: 15px; */
-}
-.img-2 {
-    border-radius: 50%;
-}
-.button {
-    width: 80px; 
-    border-radius: 50%; 
 }
 .grid-container-1 {
     display: grid;
     grid-template-columns: 1.2fr .8fr;
     /* margin-top:250px; */
     grid-gap: 20px;
-    margin:20px;
+    margin: 20px;
+    top: 200px;
     }
 .grid-child-1 {
     border: .1px grey transparent;
     color: black;
     padding: 10px 20px 20px 20px;
     border-radius: 10px;
-    /* background-image: linear-gradient(to bottom right, black, grey);*/
     background-image: linear-gradient(to bottom right,grey, rgb(82, 80, 80));
-    filter: drop-shadow(10px 10px 10px grey)
+    /*filter: drop-shadow(10px 10px 10px grey) I can't use this with fixed header */
     }
 .section {
     border: .1px grey transparent;
@@ -72,59 +63,44 @@ p   {
     padding: 20px;
     border-radius: 25px;
     background-image: linear-gradient(to bottom right,grey, rgb(82, 80, 80));
-    /*background-image: linear-gradient(grey, white);*/
-    filter: drop-shadow(10px 10px 10px grey);
+    /*filter: drop-shadow(10px 10px 10px grey); I can't use this with fixed header */
     text-align: center;
     font-size: 1em;
 }
-.grid-container-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    margin: 20px;
-    }
-.grid-child-2 {
-    border: .1px grey transparent;
-    padding: 20px;
-    border-radius: 25px;
-    background-image: linear-gradient(white,grey);
-    filter: drop-shadow(10px 10px 10px grey)
-    }
+ul li {
+    font-size: 1.35em;
+    color: white;
+    padding: 0 20px 20px 0;
+}
+.contact li {
+    display: inline;
+    text-align:left;
+} 
+.quote {
+    font-size: 2em;
+    font-weight: initial;
+    font-style: italic;
+    color: black;
+}
 .small-quote {
         font-size: .75em;
         color: black;
         }
-ul li {
-    font-size: 1.35em;
-    /*font-weight: bold;*/
-    color: white;
-    padding: 0 20px 20px 0;
-    }
-.contact li {
-    display: inline;
-    text-align:left;
-    } 
-.quote {
-            font-size: 2em;
-            font-weight: initial;
-            font-style: italic;
-            color: black;
-        }
-        .hide {
+.hide {
             display:none;
         }    
-        .question:hover ~ .hide{
+.question:hover ~ .hide{
             display:block;
             font-size: 1.2em;
             font-weight: initial;
             font-style: italic;   
         }
-        .question:hover {
+.question:hover {
                     font: size 50%;
                     font-weight: bold;
                     color: white;
         }
-        span {
+span {
             color: black;
             font-size: 1.4em;
     }
@@ -133,20 +109,33 @@ ul li {
         font-size: 1.4em;
        }
    
-    div {
+div {
         padding: 8px;
     }
-    /*
-    border-color: darkblue;
+    
+    /* 
+    
+    ---Code I've taken out but might use on re-design---
+    
+    ---Second grid---
+
+    .grid-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 20px;
+    }
+    .grid-child-2 {
+    border: .1px grey transparent;
+    padding: 20px;
+    border-radius: 25px;
+    background-image: linear-gradient(white,grey);
+    filter: drop-shadow(10px 10px 10px grey)
+    }
+
+    ---Playing with images instead of bullets in ul---
+
     list-style-image: url("checkmark.png");
     list-style-type: check;
-    object-fit: contain; /*trying to get the image to resize automatically inside the header */
-    width: 50%; /* tried to stretch Nancy's name out using this inside h1  - didn't work */
-    position: fixed; /*tried to get the header to stay at the top of the screen - didn't work */
-    position:fixed;
-    
-    background-color: rgb(44, 48, 48);
-    background-color: rgba(87, 85, 85, 0.4);
-    bottom: 70px;
     
     */
