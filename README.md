@@ -24,17 +24,22 @@ This project will span the first two weeks of the bootcamp, and you will be give
 
 Research
 
-Looked at blogger profiles to see what kind of information was often included, general layouts.
-Considered the types of activities already undertaken in bootcamp live sessions to help us connect, questions people asked to get to know each other better.  
-Formulated a list of questions for my pair partner, including preferences around style/color.
-Zoom meeting with pair partner.
-Reassessed my thoughts on presentation and content - pair partner did not want to include basic info (eg age, current occupation, why SOC etc. 
+* Looked at blogger profiles to see what kind of information was often included, general layouts.
+* Considered the types of activities already undertaken in bootcamp live sessions to help us connect, questions people asked to get to know each other better.  
+* Formulated a list of questions for my pair partner, including preferences around style/color.
+* First zoom meeting with pair partner.
+* Reassessed my thoughts on presentation and content - pair partner did not want to include basic info (eg age, current occupation, why SOC etc; pair partner has a strong preference for a monochrome site with simple lines.
 
 Development
 
-Started by creating a basic html page and adding standard block elements.  Linked CSS file and gradually built up some basic content, experimenting with backgrounds, colors, positions, borders.
+Started by creating a basic html page and adding standard block elements.  Linked CSS file and gradually built up some basic content, experimenting with backgrounds, colors, positions, borders, simple grids.  Lots of trial and error here which, whilst time consuming, helped consolidate my understanding so far, especially re use of classes, use of block and inline elements.
 
-Kept reviewing code to see if it was as efficient as I could make it.
 
 Version 3
 ![image](https://user-images.githubusercontent.com/81388296/113512897-ccc72600-955e-11eb-8187-987af57b6e69.png)
+
+Most of a basic design done.  I've experimented with drop-shadow v fixed headers (a battle that is still in progress), found out how to 
+
+I would like to simplify it further and have 4 central images which, when clicked, show the information in a section.  Research needed.
+
+Kept reviewing code to see if it was as efficient as I could make it.
