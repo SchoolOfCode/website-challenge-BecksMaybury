@@ -4,10 +4,10 @@ html {
 }
 body {
     line-height: 1.5;
-    font-size: 12px; /* set here, use em throughout to effect global changes*/
-    margin: 20px;
-    background-image: url(black-and-white-bground6.jpg);
-    background-size: cover;
+    font-size: 14px; /* set here, use em throughout to effect global changes*/
+    /* margin: 2px;
+        background-size: cover; */
+    background-color: rgb(243, 240, 240);
     height: 100%;
     color: white;
 }
@@ -16,13 +16,13 @@ header{
     height: 150px;
     justify-content: flex-start;
     align-items: center;
-    border: 10px solid goldenrod;
     border-radius: 10px;
     color: white;
     filter: drop-shadow(10px 10px 10px grey);
-    margin: 20px;
+    margin: 0px 20px 20px 20px;
     padding: 15px;
-    background-image: linear-gradient(to right, black, grey); /*taken out if new b/g okay */
+    background-image: url(black-and-white-bground6.jpg);
+    /*background-image: linear-gradient(to right, black, grey); /*taken out if new b/g okay */
     position: sticky;  /* Not working.  I cant use this with drop-shadow on the grid-children, they overlay it on scroll  */
     /* top: 0; */
     /* width: 100% */
@@ -38,17 +38,23 @@ h1 {
     margin-bottom: -10px;
     font-size: 5em;
     /* padding: 82px 0px 0px 0px; */
-    display:inline; */
+    display:inline;
+}
+.nav {
+    border: gold;
+    align-self: flex-end;
+    color: white;
 }
 h2 {
-    color: white;   
+    color: white;  
+    text-shadow: 2px 2px 4px black; 
     /*color: rgb(16, 4, 71); */
     font-size: 2.5em;
     text-align: center;
     padding: 0px 20px 0px 20px;
 }
 p   {
-    padding: 0 20px 10px 20px;
+    padding: 0 20px 5px 20px;
     color: black;
 }
 .headshot-img {
@@ -57,34 +63,160 @@ p   {
     position:relative;
     /*padding: 15px; */
 }
-.flex-container {
-    display: flex;
-    border: 10px solid goldenrod;
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    /* margin-top:250px; */
+    grid-gap: 5px;
+    margin: 10px;
+    top: 200px;
 }
-.flex-item-1 {
-    flex:1;
-    flex-wrap: wrap;
-    border: 10px solid goldenrod;
+.grid-child-1 {
+    border: .1px grey transparent;
+    color: white;
+    text-shadow: 2px 2px 4px white; 
+    font-weight: bold;
+    padding: 10px 20px 20px 20px;
+    border-radius: 10px;
+    background-image: url(black-and-white-bground7.jpg);
+    background-size: 100%;
+    margin: 20px;
+        /*background-image: linear-gradient(to bottom right transparent, rgb(82, 80, 80)); */
+        /*background-image: linear-gradient(to bottom right,grey, rgb(82, 80, 80)); 
+        /*filter: drop-shadow(10px 10px 10px grey) I can't use this with fixed header */
+    } 
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 1.2 .8fr;
+    grid-gap: 20px;
+    margin: 10px;
+    top: 200px;
+    text-align: center;
+    }
+.grid-child-2 {
+    border: .1px grey transparent;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px 20px 20px;
+    border-radius: 10px;
+    background-image: url(black-and-white-bground7.jpg);
+    background-size: 100%;
+    margin: 10px;
+} 
+ul li {
+    font-size: 1.35em;
+    color: white;
+    text-shadow: 2px 2px 4px black; 
+    padding: 0 20px 20px 0;
 }
-.flex-item-2 {
-    flex:3;
-    border: 10px solid goldenrod;
+.contact li {
+    display: inline;
+    text-align:left;
+} 
+.quote {
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+}
+.small-quote {
+    font-size: .75em;
+    color: black;
+    text-shadow: 2px 2px 4px white;
+}
+.hide {
     display:none;
+}    
+.question:hover ~ .hide{
+    display:block;
+    font-size: 1.9em;
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow: 2px 2px 4px white;   
 }
-.flex-item-3 {
-    flex:3;
-    border: 10px solid goldenrod;
+.question:hover {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-align: centre;
 }
+span {
+    color: black;
+    text-shadow: 2px 2px 4px white;
+    font-size: 1.4em;
+    text-align: center;
+}
+.accent{
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px black;
+    font-size: 1.4em;
+}
+div {
+     padding: 8px;
+    }
+footer{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    filter: drop-shadow(10px 10px 10px grey);
+    margin: 0px 20px 50px 20px;
+    padding: 15px;
+    background-image: url(black-and-white-bground6.jpg);
+     }
+    
+    /* 
+    
+    ---Code I've taken out but might use on re-design---
+    
+    ---Second grid---
+    
+    .grid-child-2 {
+        border: .1px grey transparent;
+        padding: 20px;
+        border-radius: 25px;
+        background-image: linear-gradient(white,grey);
+        filter: drop-shadow(10px 10px 10px grey)
+    }
+    
+    ---Playing with images instead of bullets in ul---
+    
+    list-style-image: url("checkmark.png");
+    list-style-type: check;
+    
+    */
+    /*        --- copied code pre playing with flexbox ---
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    /* margin-top:250px; */
+    /*grid-gap: 20px;
+    margin: 20px;
+    top: 200px;
+}
+.grid-child-1 {
+    border: .1px grey transparent;
+    color: black;
+    padding: 10px 20px 20px 20px;
+    border-radius: 10px;
+    /*background-image: linear-gradient(to bottom right transparent, rgb(82, 80, 80)); */
+    /*background-image: linear-gradient(to bottom right,grey, rgb(82, 80, 80)); 
+    /*filter: drop-shadow(10px 10px 10px grey) I can't use this with fixed header 
+} 
+
+---Code removed playing with flexbox---
 .grid-container-1 {
     display: flex;
     border: 10px solid goldenrod;
     flex-wrap:wrap;
     min-height: 100px;
     justify-content: center;
-    /* height: 200px; */
+    /* height: 200px; 
     margin: 20px;
-
-    }
+    
+}
 .grid-child-1 {
     border: .1px grey transparent;
     color: black;
@@ -96,116 +228,54 @@ p   {
     /* -- trying out box designs ---
     background-image: linear-gradient(to bottom right transparent, rgb(82, 80, 80)); */
     /*background-image: linear-gradient(to bottom right,grey, rgb(82, 80, 80)); 
-    /*filter: drop-shadow(10px 10px 10px grey) I can't use this with fixed header */
-    }
-.section {
-    border: .1px grey transparent;
-    margin-top: 250px;
-    padding: 20px;
-    border-radius: 25px;
-    background-image: linear-gradient(to bottom right,grey, rgb(82, 80, 80));
-    /*filter: drop-shadow(10px 10px 10px grey); I can't use this with fixed header */
-    text-align: center;
-    font-size: 1em;
+    /*filter: drop-shadow(10px 10px 10px grey) I can't use this with fixed header 
 }
-ul li {
-    font-size: 1.35em;
-    color: white;
-    padding: 0 20px 20px 0;
-}
-.contact li {
-    display: inline;
-    text-align:left;
-} 
-.quote {
-    font-size: 2em;
-    font-weight: initial;
-    font-style: italic;
-    color: black;
-}
-.small-quote {
-        font-size: .75em;
-        color: black;
-        }
-.hide {
-            display:none;
-        }    
-.question:hover ~ .hide{
-            display:block;
-            font-size: 1.2em;
-            font-weight: initial;
-            font-style: italic;   
-        }
-.question:hover {
-                    font: size 50%;
-                    font-weight: bold;
-                    color: white;
-        }
-.icon:hover + .hide {
-    display:flex;
-}
-.icon {
-    transition-property: display;
-    /* transition-duration: 4s;
-    transition-delay: 2s; */
+/*.icon:hover ~ .hide {
+    display:block;
+    font-size: 25px;
+    color: hotpink;
 }
 .icon:hover {
-    color:yellow;
+    color: hotpink;
+    transition-property: display; */
+    /* transition-duration: 4s;
+    transition-delay: 2s; 
 }
-span {
-            color: black;
-            font-size: 1.4em;
+.flex-container {
+    display:flex;
+    flex-direction: row;
+    border: 5px solid green;
+    font-size: 25px;
+    color: white;
+    min-height: 20px;
+}
+/* .flex-container-child {
+    border: 2px solid goldenrod;
+    flex: 1;
+} 
+.flex-item-1 {
+    border: 1px dotted hotpink;
+    width: 100px;
+}
+.flex-item-2 {
+    border: 2px dotted blue;
+    /* display:none; 
     }
-.accent{
-        color: whitesmoke;
-        font-size: 1.4em;
-       }
-   
-div {
-        padding: 8px;
+    .flex-item-3 {
+        flex-grow:3;
+        flex-wrap:wrap;
+        border: 10px solid goldenrod;
     }
+    .icon:hover {
+        color:yellow;
+    }/*
     
-    /* 
-    
-    ---Code I've taken out but might use on re-design---
-    
-    ---Second grid---
-
-    .grid-container-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    margin: 20px;
-    }
-    .grid-child-2 {
-    border: .1px grey transparent;
-    padding: 20px;
-    border-radius: 25px;
-    background-image: linear-gradient(white,grey);
-    filter: drop-shadow(10px 10px 10px grey)
-    }
-
-    ---Playing with images instead of bullets in ul---
-
-    list-style-image: url("checkmark.png");
-    list-style-type: check;
-    
-    */
-/*        --- copied code pre playing with flexbox ---
-    .grid-container-1 {
-        display: grid;
-        grid-template-columns: 1.2fr .8fr;
-        /* margin-top:250px; */
-        /*grid-gap: 20px;
-        margin: 20px;
-        top: 200px;
-        }
-    .grid-child-1 {
-        border: .1px grey transparent;
-        color: black;
-        padding: 10px 20px 20px 20px;
-        border-radius: 10px;
-        /*background-image: linear-gradient(to bottom right transparent, rgb(82, 80, 80)); */
-         /*background-image: linear-gradient(to bottom right,grey, rgb(82, 80, 80)); 
-        /*filter: drop-shadow(10px 10px 10px grey) I can't use this with fixed header 
-        } */
+        /* .section {
+            border: .1px grey transparent;
+            padding: 20px;
+        border-radius: 25px;
+        background-image: linear-gradient(to bottom right,grey, rgb(82, 80, 80));
+        /*filter: drop-shadow(10px 10px 10px grey); I can't use this with fixed header 
+        text-align: center;
+        font-size: 1em;
+    } */

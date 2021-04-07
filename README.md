@@ -38,8 +38,8 @@ Started by creating a basic html page and adding standard block elements.  Linke
 Version 3
 ![image](https://user-images.githubusercontent.com/81388296/113512897-ccc72600-955e-11eb-8187-987af57b6e69.png)
 
-Most of a basic design done.  I've experimented with drop-shadow v fixed headers (a battle that is still in progress), found out how to 
+Most of a basic design done.  I've experimented with drop-shadow v fixed headers (a battle that is still in progress), found out how to get text to change appearance and have more text appear on hover 
 
 I would like to simplify it further and have 4 central images which, when clicked, show the information in a section.  Research needed.
 
-Kept reviewing code to see if it was as efficient as I could make it.
+Kept reviewing code to see if it was as efficient as I could make it.  Look at shorthand for 
