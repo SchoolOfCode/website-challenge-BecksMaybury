@@ -30,9 +30,12 @@ Research
 * First zoom meeting with pair partner.
 * Reassessed my thoughts on presentation and content - pair partner did not want to include basic info (eg age, current occupation, why SOC etc; pair partner has a strong preference for a monochrome site with simple lines.
 
-Development
+Primary Development
 
-Started by creating a basic html page and adding standard block elements.  Linked CSS file and gradually built up some basic content, experimenting with backgrounds, colors, positions, borders, simple grids.  Lots of trial and error here which, whilst time consuming, helped consolidate my understanding so far, especially re use of classes, use of block and inline elements.
+Started by creating a basic html page and adding standard block elements.  
+Linked CSS file and gradually built up some basic content, experimenting with backgrounds, colors, positions, borders, simple grids.  Lots of trial and error here which, whilst time consuming, helped consolidate my understanding so far, especially re use of classes, use of block and inline elements.
+
+
 
 
 Version 3
