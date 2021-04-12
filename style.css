@@ -115,6 +115,7 @@ div {
     align-items: stretch; 
     flex-grow: 1;
     margin-bottom: 10px;
+    width:100%;
 } 
 .box-layout {
     text-align: center;
